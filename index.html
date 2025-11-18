@@ -1,9 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Hello, Welcome to My Website!</h1>
-    <p>This page is hosted using GitHub Pages.</p>
+
+<section class="container">
+    <h1>Code Editor</h1>
+    <div class="editor">
+        <div class="left">
+            <lebel>HTML</lebel>
+            <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+
+            <lebel>CSS</lebel>
+            <textarea onkeyup="run()" spellcheck="false" id="css-code"></textarea>
+
+            <lebel>JavaScript</lebel>
+            <textarea onkeyup="run()" spellcheck="false" id="js-code"></textarea>
+        </div>
+        <div class="right">
+            <lebel>OUTPUT</lebel>
+            <iframe ID="output"></iframe>
+            </iframe>
+        </div>
+
+    </div>
+</section>
+    <script src="script.js"></script>
+    
 </body>
 </html>
